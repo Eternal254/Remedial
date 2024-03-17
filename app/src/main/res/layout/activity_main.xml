@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título del Directorio de Contactos -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Directorio de Contactos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- EditText para el nombre del contacto -->
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Contacto"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- EditText para el teléfono del contacto -->
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono del Contacto"
+        android:inputType="phone"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- ListView para mostrar los contactos -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <!-- Botón para agregar un nuevo contacto -->
+    <Button
+        android:id="@+id/btnAgregarContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Contacto"
+        android:layout_marginTop="16dp"
+        android:onClick="agregarContacto" />
+
+</LinearLayout>
